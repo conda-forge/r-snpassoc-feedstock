@@ -1,22 +1,21 @@
 About r-snpassoc
 ================
 
-Home: https://cran.r-project.org/web/packages/SNPassoc/index.html
+Home: http://www.creal.cat/jrgonzalez/software.htm
 
 Package license: GPL (>= 2)
 
 Feedstock license: BSD 3-Clause
 
-Summary: This package carries out most common analysis when performing whole genome association studies. These analyses include descriptive statistics and exploratory analysis of missing values, calculation of Hardy-Weinberg equilibrium, analysis of association based on generalized linear models (either for quantitative or binary traits), and analysis of multiple SNPs (haplotype and epistasis analysis). Permutation test and related tests (sum statistic and truncated product) are also implemented. Max-statistic and genetic risk-allele score exact distributions are also possible to be estimated.
+Summary: This package carries out most common analysis when performing whole genome association studies. These analyses include descriptive statistics and exploratory analysis of missing values, calculation of Hardy-Weinberg equilibrium, analysis of association based on generalized linear models (either for quantitative or binary traits), and analysis of multiple SNPs (haplotype and epistasis analysis). Permutation test and related tests (sum statistic and truncated product) are also implemented. Max-statistic and genetic risk-allele score exact distributions are also possible to be estimated. 
 
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-snpassoc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-snpassoc-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-snpassoc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-snpassoc-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-snpassoc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-snpassoc-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-snpassoc-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-snpassoc-feedstock)
 
 Current release info
 ====================
