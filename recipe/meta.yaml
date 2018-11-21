@@ -15,16 +15,14 @@ source:
   sha256: b08e65ddbaa287fa7f4806a4a6c1556e4cefb036a77e1c56f7ddbcf591f46b84
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
-  build:
-    - {{posix}}zip               # [win]
-
   host:
     - r-base
     - r-haplo.stats
