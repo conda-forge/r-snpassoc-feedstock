@@ -1,4 +1,4 @@
-{% set version = "1.9-2" %}
+{% set version = "1.9-2.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,12 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SNPassoc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SNPassoc/SNPassoc_{{ version }}.tar.gz
-  sha256: b08e65ddbaa287fa7f4806a4a6c1556e4cefb036a77e1c56f7ddbcf591f46b84
+  sha256: f6e20f9d1cd2d913bbba21e35fcc41485d1085813001059a200cfcea8c072f30
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1003
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
