@@ -8,32 +8,40 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: SNPassoc_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/SNPassoc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SNPassoc/SNPassoc_{{ version }}.tar.gz
   sha256: 542dcee59438daa3e6415d40047683511271ac41e3e8177f2581fe28cda326c7
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
+  build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-ggplot2
     - r-haplo.stats
     - r-mvtnorm
+    - r-plyr
+    - r-poisbinom
     - r-survival
-
+    - r-tidyr
   run:
     - r-base
+    - r-ggplot2
     - r-haplo.stats
     - r-mvtnorm
+    - r-plyr
+    - r-poisbinom
     - r-survival
+    - r-tidyr
 
 test:
   commands:
@@ -45,15 +53,13 @@ about:
   license: GPL-2.0-or-later
   summary: 'This package carries out most common analysis when performing whole genome association studies. These analyses include descriptive statistics and exploratory analysis of missing values, calculation of Hardy-Weinberg equilibrium, analysis of association based on generalized linear models (either for quantitative
     or binary traits), and analysis of multiple SNPs (haplotype and epistasis analysis). Permutation test and related tests (sum statistic and truncated product) are also implemented. Max-statistic and genetic risk-allele score exact distributions are also possible to be estimated. '
-
   license_family: GPL3
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - dpryan79
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
