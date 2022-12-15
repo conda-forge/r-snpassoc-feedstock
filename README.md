@@ -1,7 +1,7 @@
 About r-snpassoc
 ================
 
-Home: http://www.creal.cat/jrgonzalez/software.htm
+Home: https://github.com/isglobal-brge/SNPassoc
 
 Package license: GPL-2.0-or-later
 
