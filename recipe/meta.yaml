@@ -1,4 +1,4 @@
-{% set version = "2.1-2" %}
+{% set version = "2.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SNPassoc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SNPassoc/SNPassoc_{{ version }}.tar.gz
-  sha256: ee97c14854f4b4983a0be67ed19343ece9e22c652a059854d82b9da2cb7c149f
+  sha256: 26ee310a82e91e656dbbebfbca22bc2d63a14c5c19bac46b4654dbe77c6eb0f1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
